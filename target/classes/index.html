@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>JS-CL-DEFAULTPARAMETERS</title>
+</head>
+
+<body>
+    <h2>Default Parameters Coding Lab</h2>
+    <p>In this exercise, you will need to use <strong>default parameters</strong> in order to complete this lab.
+        Navigate to the <strong><code>index.js</code></strong> file and complete the 3 exercises within it. You should
+        not edit the code in this file, but you can test out the functionality using the form below.
+    </p>
+    <hr>
+    <main>
+
+        <form id="form">
+            <h2>Simple Monthly Budget Caculator</h2>
+            <label for="income">Gross Income:</label>
+            <input type="text" id="income" name="income" required><br>
+
+            <label for="taxRate">Tax Rate as Percentage:</label>
+            <input type="text" id="taxRate" name="taxRate"><br>
+
+            <label for="expensesPercentage">Expenses as Percentage:</label>
+            <input type="text" id="expensesPercentage" name="expensesPercentage"><br>
+
+            <label for="savePercentage">To Save as Percentage:</label>
+            <input type="text" id="savePercentage" name="savePercentage"><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    
+        <div id="output">
+            <text>
+                <p id="text">Total Income: $0
+                    <br>Taxed: $0
+                    <br>Expenses: $0
+                    <br>Saved: $0
+                    <br>Spendable: $0</p>
+            </text>
+        </div>
+        
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
