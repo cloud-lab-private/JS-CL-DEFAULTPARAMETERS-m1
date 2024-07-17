@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.JavascriptExecutor;
 
-public class DefaultParametersTest {
+public class SeleniumTest{
 
     private WebDriver webDriver;
 
@@ -18,7 +18,7 @@ public class DefaultParametersTest {
         System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
 
         // Get file
-        File file = new File("index.html");
+        File file = new File("src/main/java/index.html");
         String path = "file://" + file.getAbsolutePath();
 
         // Create a new ChromeDriver instance
