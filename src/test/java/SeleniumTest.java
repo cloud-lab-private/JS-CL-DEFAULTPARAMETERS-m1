@@ -11,6 +11,7 @@ import org.openqa.selenium.JavascriptExecutor;
 public class SeleniumTest{
 
     private WebDriver webDriver;
+    private String path;
 
     @BeforeEach
     public void setUp() {
@@ -19,7 +20,7 @@ public class SeleniumTest{
 
         // Get file
         File file = new File("src/main/java/index.html");
-        String path = "file://" + file.getAbsolutePath();
+        path = "file://" + file.getAbsolutePath();
 
         // Create a new ChromeDriver instance
         ChromeOptions options = new ChromeOptions();
@@ -40,8 +41,7 @@ public class SeleniumTest{
 
     @Test
     public void calculateTaxed() {
-        File file = new File("src/main/java/index.html");
-        String path = "file://" + file.getAbsolutePath();
+        
         webDriver.get(path);
 
         JavascriptExecutor jsExecutor = (JavascriptExecutor) webDriver;
@@ -59,8 +59,7 @@ public class SeleniumTest{
 
     @Test
     public void calculateExpenses() {
-        File file = new File("src/main/java/index.html");
-        String path = "file://" + file.getAbsolutePath();
+        
         webDriver.get(path);
 
         JavascriptExecutor jsExecutor = (JavascriptExecutor) webDriver;
@@ -78,8 +77,7 @@ public class SeleniumTest{
 
     @Test
     public void calculateSaved() {
-        File file = new File("src/main/java/index.html");
-        String path = "file://" + file.getAbsolutePath();
+       
         webDriver.get(path);
 
         JavascriptExecutor jsExecutor = (JavascriptExecutor) webDriver;
