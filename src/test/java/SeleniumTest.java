@@ -19,9 +19,8 @@ public class SeleniumTest{
     @BeforeAll
     static void setupClass() {
         WebDriverManager.chromedriver().setup();
-        webDriver = new ChromeDriver();
         WebDriverManager.edgedriver().setup();
-        webDriver = new EdgeDriver();
+
     }
 
     @BeforeEach
