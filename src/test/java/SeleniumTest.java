@@ -13,6 +13,13 @@ public class SeleniumTest{
     private WebDriver webDriver;
     private String path;
 
+    @BeforeAll
+    @BeforeAll
+    static void setupClass() {
+        WebDriverManager.chromedriver().setup();
+        WebDriverManager.edgedriver().setup();
+    }
+
     @BeforeEach
     public void setUp() {
         // Set up ChromeDriver path
