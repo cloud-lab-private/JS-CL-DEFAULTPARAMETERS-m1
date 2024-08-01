@@ -14,7 +14,6 @@ public class SeleniumTest{
     private String path;
 
     @BeforeAll
-    @BeforeAll
     static void setupClass() {
         WebDriverManager.chromedriver().setup();
         WebDriverManager.edgedriver().setup();
