@@ -36,6 +36,9 @@ public class SeleniumTest{
         // Create a new ChromeDriver instance
         ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
         options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         webDriver = new ChromeDriver(options);
 
