@@ -11,6 +11,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.PageLoadStrategy;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import java.time.Duration;
 
 public class SeleniumTest{
 
@@ -40,6 +41,8 @@ public class SeleniumTest{
 
         // Open the HTML file
         webDriver.get(path);
+        webDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(600));
+        webDriver.manage().timeouts().setScriptTimeout(Duration.ofSeconds(600));
     }
 
     @AfterEach
